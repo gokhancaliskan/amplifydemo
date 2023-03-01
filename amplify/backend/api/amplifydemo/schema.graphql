@@ -1,0 +1,13 @@
+type Blogpost @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  text: String
+  img: String
+}
+
+type Project @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  text: String
+  img: String
+} 
